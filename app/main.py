@@ -55,9 +55,9 @@ def semantic_search(q: str, min_sim: float = 0.5):
 
     try:
         query = """
-        MATCH (e:Employee)-[r:EMP_HAS_SKILL]->(s:Skill)
+        MATCH (e:Employee)-[r:EMP_HAS_SKILL]->(s:Skill)<-[:EVIDENCE_FOR]-(ev:Evidence)
         RETURN e.name AS employee, e.role AS role, s.name AS skill,
-               r.score AS level, s.embedding AS embedding
+        r.score AS level, s.embedding AS embedding, ev.text AS evidence
         """
         result = conn.execute(query)
         rows = []
@@ -71,6 +71,7 @@ def semantic_search(q: str, min_sim: float = 0.5):
                     "role": row_dict["role"],
                     "skill": row_dict["skill"],
                     "level": row_dict["level"],
+                    "evidence": row_dict["evidence"],
                     "similarity": sim
                 })
 
