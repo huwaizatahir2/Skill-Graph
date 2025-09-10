@@ -1,0 +1,892 @@
+{
+  "organization": {
+    "name": "Arbisoft",
+    "teams": [
+      {
+        "name": "Platform Engineering",
+        "employees": [
+          {
+            "id": "emp001",
+            "name": "Huzaifa",
+            "role": "Backend & DevOps Engineer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Docker Optimization",
+                "score": 5,
+                "evidence": "Reduced Celery build times by decoupling volume rebuilds via Docker YAML improvements."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "CI/CD Improvements",
+                "score": 4,
+                "evidence": "Migrated repos to Xiangqi BVS for enhanced CI/CD automation and team accessibility."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Monitoring & Logging",
+                "score": 4,
+                "evidence": "Set up CloudWatch and New Relic for detailed observability including bots, Celery, and auto-pairing."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Infrastructure as Code",
+                "score": 5,
+                "evidence": "Initiated and led blue-green deployment strategy with positive client feedback and 80% implementation."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Deployment Strategy Leadership",
+                "score": 4,
+                "evidence": "Proposed alternatives to Kubernetes like blue‑green deployments and auto‑scaling as DRI for related OKR."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "AI/ML Collaboration",
+                "score": 5,
+                "evidence": "Collaborated with internal AI team and external engineers to explore LLMs, knowledge graphs, and Neo4j integration."
+              }
+            ]
+          },
+          {
+            "id": "emp002",
+            "name": "Ayesha",
+            "role": "DevOps Specialist",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "CI/CD Pipeline Design",
+                "score": 4,
+                "evidence": "Designed and implemented Jenkins-based pipelines for multiple services reducing deployment time by 40%."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Infrastructure Automation",
+                "score": 5,
+                "evidence": "Automated infrastructure provisioning using Terraform and Ansible enabling consistent environments across projects."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Cloud Migration",
+                "score": 4,
+                "evidence": "Migrated legacy on-premise systems to AWS, optimizing cost and improving scalability."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Cross-team Collaboration",
+                "score": 5,
+                "evidence": "Coordinated with frontend and backend teams to ensure seamless integration and deployment of new features."
+              },
+              {
+                "category": "Communication",
+                "skill": "Documentation & Knowledge Sharing",
+                "score": 4,
+                "evidence": "Authored detailed runbooks and facilitated training sessions for new team members on deployment processes."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Incident Management Leadership",
+                "score": 5,
+                "evidence": "Led major incident responses, coordinated triage, and communicated impact and resolution steps to stakeholders."
+              }
+            ]
+          },
+          {
+            "id": "emp003",
+            "name": "Bilal",
+            "role": "Infrastructure Engineer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Kubernetes Administration",
+                "score": 5,
+                "evidence": "Managed production Kubernetes clusters, implemented automated scaling and self‑healing policies."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Load Balancer Optimization",
+                "score": 4,
+                "evidence": "Optimized NGINX and ELB configurations improving throughput by 30%."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Monitoring Implementation",
+                "score": 4,
+                "evidence": "Deployed Prometheus and Grafana dashboards for system performance tracking and capacity planning."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Mentorship",
+                "score": 5,
+                "evidence": "Mentored junior engineers on Kubernetes, CI/CD best practices, and infrastructure troubleshooting."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Cross-Team Collaboration",
+                "score": 4,
+                "evidence": "Actively collaborated with product owners and SRE teams to identify and fix infrastructure bottlenecks."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Risk Planning",
+                "score": 4,
+                "evidence": "Developed risk management plans and backup strategies for critical infrastructure components."
+              }
+            ]
+          },
+          {
+            "id": "emp004",
+            "name": "Samir",
+            "role": "Site Reliability Engineer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Site Reliability Engineering",
+                "score": 5,
+                "evidence": "Built automated monitoring and alerting pipelines, reducing mean time to recovery (MTTR) by 25%."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Disaster Recovery Planning",
+                "score": 4,
+                "evidence": "Designed and tested disaster recovery plans ensuring zero data loss and minimal downtime."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Deployment Automation",
+                "score": 4,
+                "evidence": "Implemented deployment scripts and tooling to achieve zero-downtime releases across microservices."
+              },
+              {
+                "category": "Communication",
+                "skill": "Stakeholder Communication",
+                "score": 5,
+                "evidence": "Regularly briefed stakeholders on system health and incident reports with clear action plans."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "On-call Management",
+                "score": 5,
+                "evidence": "Organized and managed on-call schedules ensuring effective incident response coverage."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Process Improvement",
+                "score": 4,
+                "evidence": "Led retrospectives post-incidents and implemented improvements for continuous reliability enhancements."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "AI & ML Research",
+        "employees": [
+          {
+            "id": "emp005",
+            "name": "Fatima",
+            "role": "ML Engineer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Model Development & Training",
+                "score": 5,
+                "evidence": "Developed and trained deep learning models achieving state-of-the-art accuracy on benchmark datasets."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "MLOps Implementation",
+                "score": 4,
+                "evidence": "Implemented ML pipelines using Kubeflow and Airflow for automated training and deployment."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Data Preprocessing & Feature Engineering",
+                "score": 4,
+                "evidence": "Designed preprocessing pipelines and engineered features improving model performance."
+              },
+              {
+                "category": "Communication",
+                "skill": "Research Presentation",
+                "score": 5,
+                "evidence": "Presented research findings at internal seminars and external conferences, articulating complex concepts clearly."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Product Team Collaboration",
+                "score": 4,
+                "evidence": "Worked with product teams to translate research models into deployable products."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Technical Leadership",
+                "score": 5,
+                "evidence": "Led research subprojects, mentored juniors, and guided experiment design and review."
+              }
+            ]
+          },
+          {
+            "id": "emp006",
+            "name": "Ali",
+            "role": "Data Scientist",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Statistical Analysis & Experiment Design",
+                "score": 4,
+                "evidence": "Conducted A/B testing and statistical modelling to validate product hypotheses."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Machine Learning Pipeline",
+                "score": 4,
+                "evidence": "Built end-to-end ML pipelines from data collection to deployment."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Cloud-based ML Deployment",
+                "score": 5,
+                "evidence": "Deployed ML models to AWS SageMaker and GCP AI Platform ensuring scalability."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Mentoring Interns",
+                "score": 5,
+                "evidence": "Supervised interns on data science projects, providing guidance on methodology and technical implementation."
+              },
+              {
+                "category": "Communication",
+                "skill": "Communicating Complex Results",
+                "score": 4,
+                "evidence": "Translated complex statistical results into insights for non-technical stakeholders."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Roadmapping",
+                "score": 4,
+                "evidence": "Developed long-term roadmap for ML initiatives aligning with company goals."
+              }
+            ]
+          },
+          {
+            "id": "emp007",
+            "name": "Sarah",
+            "role": "NLP Engineer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Natural Language Processing",
+                "score": 5,
+                "evidence": "Built NLP models including transformers for text classification and summarization."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "LLM Fine‑tuning & Prompt Engineering",
+                "score": 4,
+                "evidence": "Fine-tuned large language models and designed prompt strategies to improve responses."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Evaluation & Metrics",
+                "score": 4,
+                "evidence": "Developed evaluation pipelines using BLEU, ROUGE, and F1 metrics for NLP models."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Cross-team Collaboration",
+                "score": 5,
+                "evidence": "Worked with data engineering and product teams to integrate NLP services into applications."
+              },
+              {
+                "category": "Communication",
+                "skill": "Documentation",
+                "score": 4,
+                "evidence": "Documented model architectures and API usage for easy adoption by other teams."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Continuous Learning",
+                "score": 5,
+                "evidence": "Regularly updated team on latest NLP research trends and conducted knowledge-sharing sessions."
+              }
+            ]
+          },
+          {
+            "id": "emp008",
+            "name": "Karim",
+            "role": "Research Scientist",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Computer Vision Algorithms",
+                "score": 5,
+                "evidence": "Developed computer vision models for object detection and segmentation."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Research & Experimentation",
+                "score": 4,
+                "evidence": "Designed and executed experiments testing novel architectures and optimization techniques."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "ML Infrastructure",
+                "score": 4,
+                "evidence": "Built scalable ML infrastructure for training large models on GPU clusters."
+              },
+              {
+                "category": "Communication",
+                "skill": "Conference Presentations",
+                "score": 5,
+                "evidence": "Presented papers at international conferences effectively communicating findings."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Project Leadership",
+                "score": 4,
+                "evidence": "Led research projects, managed timelines, and coordinated with cross-functional teams."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Collaboration with Data Engineering",
+                "score": 4,
+                "evidence": "Partnered with data engineers to ensure efficient data pipelines for vision models."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frontend Development",
+        "employees": [
+          {
+            "id": "emp009",
+            "name": "Malika",
+            "role": "Frontend Engineer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "React Development",
+                "score": 4,
+                "evidence": "Implemented React-based dashboards and reusable components for multiple client projects."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "AngularJS Migration",
+                "score": 3,
+                "evidence": "Contributed to migrating legacy AngularJS modules to modern frameworks."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "UI Component Library Development",
+                "score": 5,
+                "evidence": "Developed a shared component library improving UI consistency across projects."
+              },
+              {
+                "category": "Communication",
+                "skill": "Stakeholder Presentation",
+                "score": 5,
+                "evidence": "Presented feature demos and roadmap updates to stakeholders effectively."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Pair Programming & Code Reviews",
+                "score": 4,
+                "evidence": "Participated in pair programming and provided constructive code review feedback."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Requirement Interpretation",
+                "score": 4,
+                "evidence": "Collaborated with product owners to interpret requirements and refine user stories."
+              }
+            ]
+          },
+          {
+            "id": "emp010",
+            "name": "Hammad",
+            "role": "UI/UX Developer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "UI/UX Design Implementation",
+                "score": 5,
+                "evidence": "Implemented responsive layouts and pixel-perfect UI according to design specifications."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Accessibility Compliance",
+                "score": 4,
+                "evidence": "Ensured components meet WCAG accessibility standards through proper semantics and testing."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Vue.js Development",
+                "score": 3,
+                "evidence": "Integrated Vue.js for interactive components on certain projects."
+              },
+              {
+                "category": "Communication",
+                "skill": "Prototyping & Wireframing",
+                "score": 4,
+                "evidence": "Collaborated with designers to translate wireframes into functional prototypes."
+              },
+              {
+                "category": "Communication",
+                "skill": "Client Communication",
+                "score": 5,
+                "evidence": "Interfaced with clients to gather feedback and adjust designs accordingly."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Backend Collaboration",
+                "score": 4,
+                "evidence": "Worked closely with backend developers to ensure API integration and data flow."
+              }
+            ]
+          },
+          {
+            "id": "emp011",
+            "name": "Nadia",
+            "role": "React Developer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "React Hooks & Context",
+                "score": 5,
+                "evidence": "Architected applications with React Hooks and Context for state management."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "TypeScript Integration",
+                "score": 4,
+                "evidence": "Integrated TypeScript into projects improving type safety and developer productivity."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Micro-frontend Architecture",
+                "score": 4,
+                "evidence": "Implemented micro-frontend architecture enabling independent deployment of modules."
+              },
+              {
+                "category": "Communication",
+                "skill": "Documentation",
+                "score": 4,
+                "evidence": "Maintained comprehensive documentation for components and services."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Sprint Planning Participation",
+                "score": 4,
+                "evidence": "Contributed to sprint planning and estimation, ensuring realistic timelines."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Frontend Community Leadership",
+                "score": 5,
+                "evidence": "Led internal frontend guild meetings to discuss best practices and new technologies."
+              }
+            ]
+          },
+          {
+            "id": "emp012",
+            "name": "Omar",
+            "role": "Full Stack Developer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Full Stack Development",
+                "score": 4,
+                "evidence": "Delivered end-to-end features including backend APIs and frontend interfaces."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "GraphQL Integration",
+                "score": 4,
+                "evidence": "Implemented GraphQL APIs enabling flexible data retrieval for clients."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Testing & QA",
+                "score": 5,
+                "evidence": "Set up unit and integration tests ensuring high-quality code and fewer bugs."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Mentoring Junior Developers",
+                "score": 5,
+                "evidence": "Mentored new hires on codebase structure and development workflows."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Cross-functional Collaboration",
+                "score": 4,
+                "evidence": "Collaborated with design and marketing teams for product launch readiness."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Decision-making & Prioritization",
+                "score": 4,
+                "evidence": "Balanced competing priorities in feature roadmap and resolved conflicts effectively."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mobile Development",
+        "employees": [
+          {
+            "id": "emp013",
+            "name": "Zainab",
+            "role": "iOS Developer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Swift & iOS Development",
+                "score": 5,
+                "evidence": "Built several iOS applications using Swift and SwiftUI with high user satisfaction."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Mobile UI/UX",
+                "score": 4,
+                "evidence": "Designed intuitive UI flows and implemented Apple Human Interface Guidelines."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "CI for Mobile Apps",
+                "score": 4,
+                "evidence": "Set up continuous integration for iOS apps using Fastlane and Jenkins."
+              },
+              {
+                "category": "Communication",
+                "skill": "Demo Presentations",
+                "score": 5,
+                "evidence": "Conducted product demos to stakeholders demonstrating new features."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Backend Collaboration",
+                "score": 4,
+                "evidence": "Coordinated with backend API teams to define and integrate endpoints."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Release Management",
+                "score": 4,
+                "evidence": "Managed app releases, ensuring compliance with App Store guidelines and timely delivery."
+              }
+            ]
+          },
+          {
+            "id": "emp014",
+            "name": "Yasir",
+            "role": "Android Developer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Kotlin & Android Development",
+                "score": 5,
+                "evidence": "Developed Android apps using Kotlin with clean architecture principles."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Jetpack Compose",
+                "score": 4,
+                "evidence": "Implemented Jetpack Compose for modern declarative UI patterns."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Performance Optimization",
+                "score": 4,
+                "evidence": "Optimized app performance by profiling and refactoring critical code paths."
+              },
+              {
+                "category": "Communication",
+                "skill": "User Feedback Incorporation",
+                "score": 5,
+                "evidence": "Gathered user feedback via beta testing and integrated changes into releases."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Code Reviews",
+                "score": 4,
+                "evidence": "Provided thorough code review feedback emphasizing quality and performance."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Decision-making Under Pressure",
+                "score": 4,
+                "evidence": "Made critical decisions during production incidents ensuring minimal downtime."
+              }
+            ]
+          },
+          {
+            "id": "emp015",
+            "name": "Faizan",
+            "role": "Cross-Platform Developer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "React Native Development",
+                "score": 5,
+                "evidence": "Built cross-platform apps using React Native achieving near-native performance."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Flutter Integration",
+                "score": 4,
+                "evidence": "Integrated Flutter modules into existing apps to leverage native UI components."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Shared Library Building",
+                "score": 4,
+                "evidence": "Created shared libraries to reuse business logic across iOS and Android."
+              },
+              {
+                "category": "Communication",
+                "skill": "Designer Collaboration",
+                "score": 4,
+                "evidence": "Worked with design teams to ensure UI consistency across platforms."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Cross-platform Code Sharing",
+                "score": 5,
+                "evidence": "Facilitated knowledge sharing sessions across platform teams and documented best practices."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Leadership in Mobile Task Force",
+                "score": 4,
+                "evidence": "Led a task force to evaluate new mobile technologies and presented recommendations to leadership."
+              }
+            ]
+          },
+          {
+            "id": "emp016",
+            "name": "Mona",
+            "role": "Mobile Architect",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Mobile Solution Architecture",
+                "score": 5,
+                "evidence": "Designed scalable mobile architectures for multi-module applications."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "API Integration",
+                "score": 4,
+                "evidence": "Oversaw REST and GraphQL API integration ensuring secure and efficient data transfer."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Security Best Practices",
+                "score": 4,
+                "evidence": "Implemented encryption, secure storage, and authentication protocols to protect user data."
+              },
+              {
+                "category": "Communication",
+                "skill": "Technical Presentations",
+                "score": 5,
+                "evidence": "Delivered architecture presentations to engineers and leadership articulating design decisions."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Team Coordination",
+                "score": 4,
+                "evidence": "Coordinated between iOS and Android teams to ensure consistent architecture and implementation."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Maintenance Planning",
+                "score": 4,
+                "evidence": "Developed long-term maintenance strategies to support app scalability and feature growth."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Data Engineering & Analytics",
+        "employees": [
+          {
+            "id": "emp017",
+            "name": "Raza",
+            "role": "Data Engineer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "ETL Pipeline Development",
+                "score": 5,
+                "evidence": "Built ETL pipelines using Apache Airflow and Spark to process terabytes of data."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Data Warehouse Design",
+                "score": 4,
+                "evidence": "Designed star-schema data warehouse models to support analytics queries."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Performance Tuning",
+                "score": 4,
+                "evidence": "Optimized SQL queries and data storage formats to improve query performance."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Collaboration with Analysts",
+                "score": 4,
+                "evidence": "Worked with analysts to understand data requirements and delivered accessible datasets."
+              },
+              {
+                "category": "Communication",
+                "skill": "Data Quality Assurance",
+                "score": 4,
+                "evidence": "Implemented data validation rules and communicated data issues to stakeholders."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Mentoring Junior Engineers",
+                "score": 5,
+                "evidence": "Mentored junior team members on data engineering best practices and code reviews."
+              }
+            ]
+          },
+          {
+            "id": "emp018",
+            "name": "Sana",
+            "role": "BI Developer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Business Intelligence Dashboard Development",
+                "score": 5,
+                "evidence": "Built interactive dashboards using Power BI and Tableau with actionable insights."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "SQL Reporting",
+                "score": 4,
+                "evidence": "Developed complex SQL queries to deliver customized reports."
+              },
+              {
+                "category": "Communication",
+                "skill": "Stakeholder Engagement",
+                "score": 4,
+                "evidence": "Gathered requirements from stakeholders and delivered tailored BI solutions."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Team Collaboration",
+                "score": 5,
+                "evidence": "Collaborated with data engineers and analysts to ensure data availability and report accuracy."
+              },
+              {
+                "category": "Communication",
+                "skill": "Training Sessions",
+                "score": 4,
+                "evidence": "Conducted training sessions for end-users on dashboard usage and interpretation."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Strategic Planning",
+                "score": 4,
+                "evidence": "Contributed to BI strategy planning aligning analytics initiatives with business objectives."
+              }
+            ]
+          },
+          {
+            "id": "emp019",
+            "name": "Imran",
+            "role": "Analytics Engineer",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Analytics Engineering",
+                "score": 5,
+                "evidence": "Built data models and transformation layers in dbt for analytics use cases."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Data Modelling",
+                "score": 4,
+                "evidence": "Designed conceptual and logical data models to support analytics and reporting."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "ML Feature Pipelines",
+                "score": 4,
+                "evidence": "Developed pipelines to prepare features for machine learning models."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Cross-team Collaboration",
+                "score": 4,
+                "evidence": "Worked with data scientists and engineers to ensure smooth data flows."
+              },
+              {
+                "category": "Communication",
+                "skill": "Write-ups & Reports",
+                "score": 5,
+                "evidence": "Produced detailed reports and documentation for analytics architectures and datasets."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Leadership in Analytics Projects",
+                "score": 4,
+                "evidence": "Led analytics initiatives, overseeing timelines, and delivering business insights."
+              }
+            ]
+          },
+          {
+            "id": "emp020",
+            "name": "Layla",
+            "role": "Database Administrator",
+            "skills": [
+              {
+                "category": "Technical Execution",
+                "skill": "Database Administration",
+                "score": 5,
+                "evidence": "Managed relational databases ensuring data integrity, security, and availability."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Backup & Recovery",
+                "score": 4,
+                "evidence": "Implemented automated backup and disaster recovery mechanisms minimizing data loss."
+              },
+              {
+                "category": "Technical Execution",
+                "skill": "Performance Monitoring",
+                "score": 4,
+                "evidence": "Monitored database performance and tuned configurations to maximize efficiency."
+              },
+              {
+                "category": "Communication",
+                "skill": "Documentation & Standards",
+                "score": 4,
+                "evidence": "Maintained documentation on database schemas, policies, and procedures."
+              },
+              {
+                "category": "Teamwork",
+                "skill": "Collaboration with DevOps",
+                "score": 4,
+                "evidence": "Collaborated with DevOps teams to implement database deployment pipelines."
+              },
+              {
+                "category": "Maturity",
+                "skill": "Governance & Compliance",
+                "score": 5,
+                "evidence": "Ensured compliance with data governance regulations and established security protocols."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
