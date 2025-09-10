@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 import os
 import kuzu
+import numpy as np
 
 # Load env vars
 load_dotenv()
@@ -22,13 +23,20 @@ db = kuzu.Database(str(DB_FILE))
 conn = kuzu.Connection(db)
 
 
-# --- Helper: OpenAI embedding ---
+# --- Helpers ---
 def embed_query(q: str):
+    """Call OpenAI to embed query text."""
     resp = client.embeddings.create(
         model="text-embedding-3-small",
         input=q
     )
     return resp.data[0].embedding
+
+
+def cosine_sim(v1, v2):
+    """Compute cosine similarity between two vectors."""
+    v1, v2 = np.array(v1), np.array(v2)
+    return float(np.dot(v1, v2) / (np.linalg.norm(v1) * np.linalg.norm(v2)))
 
 
 # --- Endpoints ---
@@ -40,16 +48,34 @@ def read_root():
 @app.get("/search")
 def semantic_search(q: str, min_sim: float = 0.5):
     """Semantic search for employees based on skill relevance to query."""
-    q_vec = embed_query(q)
+    try:
+        q_vec = embed_query(q)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Embedding failed: {e}")
 
-    query = """
-    MATCH (e:Employee)-[r:EMP_HAS_SKILL]->(s:Skill)
-    WITH e, s, r, cosinesim(s.embedding, $q_vec) AS sim
-    WHERE sim >= $min_sim
-    RETURN e.name AS employee, e.role AS role, s.name AS skill, r.score AS level, sim
-    ORDER BY sim DESC, level DESC
-    LIMIT 10
-    """
+    try:
+        query = """
+        MATCH (e:Employee)-[r:EMP_HAS_SKILL]->(s:Skill)
+        RETURN e.name AS employee, e.role AS role, s.name AS skill,
+               r.score AS level, s.embedding AS embedding
+        """
+        result = conn.execute(query)
+        rows = []
+        columns = result.get_column_names()
+        for row in result:
+            row_dict = dict(zip(columns, row))
+            sim = cosine_sim(q_vec, row_dict["embedding"])
+            if sim >= min_sim:
+                rows.append({
+                    "employee": row_dict["employee"],
+                    "role": row_dict["role"],
+                    "skill": row_dict["skill"],
+                    "level": row_dict["level"],
+                    "similarity": sim
+                })
 
-    result = conn.execute(query, {"q_vec": q_vec, "min_sim": min_sim})
-    return [dict(row) for row in result]
+        rows.sort(key=lambda x: (x["similarity"], x["level"]), reverse=True)
+        return rows[:10]
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Search failed: {e}")
