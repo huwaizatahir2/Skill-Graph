@@ -1,2 +1,3 @@
 fastapi==0.109.2
 uvicorn==0.25.0
+kuzu==0.11.2
